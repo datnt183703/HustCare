@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HustCARE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="/css/feedback-2.css">
+    <link rel="stylesheet" href="/css/feedback.css">
+</head>
+
+<body>
+    <section class="contact" id="contact">
+
+        <h1 class="heading">
+            <span>f</span>
+            <span>e</span>
+            <span>e</span>
+            <span>d</span>
+            <span>b</span>
+            <span>a</span>
+            <span>c</span>
+            <span>k</span>
+        </h1>
+
+        <div class="row">
+            <div class="image">
+                <img src="/image/rating.svg" style="border-radius: 50%;" alt="">
+            </div>
+            <form action="/feedback" method="post">
+                <div class="inputBox">
+                    <input type="text" placeholder="Tên của bạn là gì?" name="name" value="{{userdata.name}}">
+                    <select name="title">
+                        <option value="">Nhấn để lựa chọn</option>
+                        <option value="Phản hồi về chất lượng hệ thống">Phản hồi về chất lượng hệ thống</option>
+                        <option value="Phản hồi về bác sĩ">Phản hồi về bác sĩ</option>
+                    </select>
+                </div>
+                <textarea placeholder="Nội dung mà bạn muốn đánh giá là gì?" name="content" id="" cols="30"
+                    rows="10"></textarea>
+                <div class="inputBox">
+                    <select name="rate">
+                        <option value="">Lựa chọn mức độ hài lòng</option>
+                        <option value="Rất hài lòng">Rất hài lòng</option>
+                        <option value="Hài lòng">Hài lòng</option>
+                        <option value="Bình thường">Bình thường</option>
+                        <option value="Không hài lòng">Không hài lòng</option>
+                        <option value="Rất tệ">Rất tệ</option>
+                    </select>
+                </div>
+                <input type="submit" class="btn" value="Gửi phản hồi">
+        </div>
+        </form>
+
+        </div>
+
+        <div class="bs-phanhoi" id="bs-phanhoi">
+            <div class="vung-bao">
+                <h2 class="bs-tieude">Phản hồi của người dùng</h2>
+                <div class="feedback-list">
+                    {{#each feedbacks}}
+                    <div class="feedback-item">
+                        <div class="feedback-name">{{this.username}}</div>
+                        <div class="feedback-title">{{this.rate}}</div>
+                        <div class="feedback-content">{{this.content}}</div>
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+
+    </section>
+</body>
+
+
+<!-- custom js file link  -->
+<script src="script.js"></script>
+
+</html>

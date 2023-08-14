@@ -1,0 +1,50 @@
+.vung-bao {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+
+@media (min-width: 768px) {
+  .vung-bao {
+    width: 750px; } }
+
+@media (min-width: 992px) {
+  .vung-bao {
+    width: 970px; } }
+
+@media (min-width: 1200px) {
+  .vung-bao {
+    width: 1170px; } }
+
+.bs-phanhoi {
+  margin-top: 100px; }
+
+.bs-tieude {
+  margin: 15px 0;
+  font-size: 30px;
+  font-weight: bold;
+  color: #464444; }
+
+.feedback-name {
+  font-size: 25px;
+  font-weight: bold;
+  color: #666;
+  margin-top: 10px;
+  margin-bottom: 5px; }
+
+.feedback-title {
+  font-size: 15px;
+  font-weight: bold;
+  color: #666; }
+
+.feedback-info {
+  font-size: 13px;
+  cursor: pointer; }
+
+.feedback-content {
+  padding-top: 5px;
+  font-size: medium;
+  color: #666; }
+
+.image img {
+  border: solid 1px #e6e1e1; }

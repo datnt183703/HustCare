@@ -1,0 +1,208 @@
+[{
+  "_id": {
+    "$oid": "61df87c5bc73e41705aa7ee0"
+  },
+  "account": "khoanguyen92",
+  "password": "ySu7XXvE",
+  "name": "Nguyễn Anh Khoa",
+  "age": 28,
+  "gender": "Nam",
+  "address": "193 Kim Đồng, Hoàng Mai, Hà Nội",
+  "phone": "84942453340",
+  "role": 1,
+  "description": "Nhân viên văn phòng",
+  "email": "",
+  "origin": "",
+  "updatedAt": {
+    "$date": "2022-01-13T02:06:40.160Z"
+  }
+},{
+  "_id": {
+    "$oid": "61df87c5bc73e41705aa7ee1"
+  },
+  "account": "quocvuongnguyen",
+  "password": "UtF3KA6Cb9",
+  "name": "Phạm Quốc Vương",
+  "age": 32,
+  "gender": "Nam",
+  "address": "47 Thái Hà, Đống Đa, Hà Nội",
+  "phone": 84919245586,
+  "role": 1,
+  "description": "Kinh doanh"
+},{
+  "_id": {
+    "$oid": "61df87c5bc73e41705aa7ee2"
+  },
+  "account": "dmtuan76",
+  "password": "johnnydang",
+  "name": "Đặng Minh Tuấn",
+  "age": 44,
+  "gender": "Nam",
+  "address": "19 Hoàng Cầu, Đống Đa, Hà Nội",
+  "phone": 84379970789,
+  "role": 1,
+  "description": "Kinh doanh"
+},{
+  "_id": {
+    "$oid": "61df87c5bc73e41705aa7ee3"
+  },
+  "stt": 1,
+  "account": "bshoaihuong",
+  "password": "huong1975",
+  "name": "Trần Thị Hoài Hương",
+  "age": 47,
+  "gender": "Nữ",
+  "address": "30/1A Ngô Thời Nhiệm, Phường 7, Quận 3, Thành phố Hồ Chí Minh",
+  "role": 2,
+  "description": "Trưởng Khoa Dinh Dưỡng bệnh viện Da Liễu TP.HCM\r\nNguyên Phó trưởng khoa Lâm sàng 1, Bệnh viện Da Liễu TPHCM\r\nBác sĩ Hương có hơn 20 năm kinh nghiệm trong khám và điều trị bệnh lý da liễu\r\nBác sĩ nhận khám mọi độ tuổi"
+},{
+  "_id": {
+    "$oid": "61df87c5bc73e41705aa7ee4"
+  },
+  "stt": 2,
+  "account": "bshungnguyenduy",
+  "password": "1234hungnguyen",
+  "name": "Nguyễn Duy Hưng",
+  "age": 45,
+  "gender": "Nam",
+  "address": "207 Phố Huế - Hai Bà Trưng - Hà Nội",
+  "role": 2,
+  "description": "Nguyên Trưởng phòng chỉ đạo tuyến tại Bệnh viện Da liễu Trung ương\r\nBác sĩ từng công tác tại Bệnh viện Da liễu Trung ương\r\nTổng thư ký hội Da liễu Việt Nam"
+},{
+  "_id": {
+    "$oid": "61df87c5bc73e41705aa7ee5"
+  },
+  "stt": 3,
+  "account": "khuyenhcm",
+  "password": "nS9hhBUS5nDhqR",
+  "name": "Trần Minh Khuyên",
+  "age": 36,
+  "gender": "Nam",
+  "address": "20-22 Dương Quang Trung, Phường 12, Quận 10, Tp. HCM",
+  "role": 2,
+  "description": "Nguyên Trưởng khoa lâm sàng, Bệnh tâm thần Thành phố Hồ Chí Minh\r\nTốt nghiệp Tâm lý trị liệu, trường Tâm lý Thực hành Paris (Psychology practique de Paris)\r\nBác sĩ nhận khám từ 16 tuổi trở lên"
+},{
+  "_id": {
+    "$oid": "61df87c5bc73e41705aa7ee6"
+  },
+  "stt": 4,
+  "account": "nguyenthihung1968",
+  "password": "hungnguyen68",
+  "name": "Nguyễn Thi Hùng",
+  "age": 53,
+  "gender": "Nam",
+  "address": "3 Đường Số 17A, Bình Trị Đông B, Bình Tân, Thành phố Hồ Chí Minh",
+  "role": 2,
+  "description": "Hơn 40 năm kinh nghiệm trong khám và điều trị bệnh lý chuyên khoa Thần kinh\r\nNhiều năm tu nghiệp và làm việc ở các trường đại học Y khoa danh tiếng ở Pháp, Mỹ, Singapore...\r\nBác sĩ nhận bệnh nhân từ 18 tuổi trở lên"
+},{
+  "_id": {
+    "$oid": "61df87c5bc73e41705aa7ee7"
+  },
+  "stt": 5,
+  "account": "bslongddhn",
+  "password": "daolonghn",
+  "name": "Đào Văn Long",
+  "age": 49,
+  "gender": "Nam",
+  "address": "Tầng 10, Tòa tháp VCCI, Số 9 phố Đào Duy Anh, Quận Đống Đa, Hà Nội",
+  "role": 2,
+  "description": "Giáo sư, Tiến sĩ, Bác sĩ chuyên khoa Tiêu hóa\r\nTrên 30 năm kinh nghiệm trong lĩnh vực Tiêu hóa – Gan mật\r\nBác sĩ không thăm khám ban đầu, chỉ đọc kết quả"
+},{
+  "_id": {
+    "$oid": "61df87c5bc73e41705aa7ee8"
+  },
+  "stt": 6,
+  "account": "maisam1974",
+  "password": "123456sam",
+  "name": "Mai Văn Sâm",
+  "age": 47,
+  "gender": "Nam",
+  "address": "Số 1E Trường Chinh - Thanh Xuân - Hà Nội",
+  "role": 2,
+  "description": "Bác sĩ Chuyên khoa Ung bướu - Nội tiết\r\nChuyên gia đầu ngành về phẫu thuật tuyến giáp ở Việt Nam\r\nChủ tịch CLB người bệnh ung thư tuyến giáp và các bệnh lý tuyến giáp"
+},{
+  "_id": {
+    "$oid": "61df87c5bc73e41705aa7ee9"
+  },
+  "stt": 7,
+  "account": "tanphamvan",
+  "password": "cqe9PTZQ9E",
+  "name": "Phạm Văn Tần",
+  "age": 50,
+  "gender": "Nam",
+  "address": "Số nhà 5 ngõ 192 Lê Trọng Tấn, Khương Mai, Thanh Xuân Hà Nội",
+  "role": 2,
+  "description": "Nguyên Trưởng khoa Khám bệnh và Điều trị ngoại trú, Bệnh viện Mắt Trung ương\r\nTrưởng Phòng khám chuyên khoa Mắt Dr.Tần\r\n20 năm kinh nghiệm khám và điều trị các bệnh về mắt"
+},{
+  "_id": {
+    "$oid": "61df87c5bc73e41705aa7eea"
+  },
+  "stt": 8,
+  "account": "bacsithanhthuy",
+  "password": "bsthuy80",
+  "name": "Vũ Thị Thanh Thủy",
+  "age": 40,
+  "gender": "Nữ",
+  "address": "Số 5 phố Xã Đàn - Đống Đa - Hà Nội",
+  "role": 2,
+  "description": "Nguyên Trưởng khoa Cơ - Xương - Khớp, Bệnh viện Bạch Mai\r\nChủ tịch Hội loãng xương Hà Nội\r\nBác sĩ nhận bệnh nhân từ 18 tuổi trở lên"
+},{
+  "_id": {
+    "$oid": "61df87c5bc73e41705aa7eeb"
+  },
+  "stt": 9,
+  "account": "vuthaiha",
+  "password": "354SWyj74FyE",
+  "name": "Vũ Thái Hà",
+  "age": 36,
+  "gender": "Nam",
+  "address": "Số 8 ngõ 26 Hoàng Cầu cũ (gần Ô Chợ Dừa), Đống Đa, Hà Nội",
+  "role": 2,
+  "description": "Trưởng khoa Khoa nghiên cứu và ứng dụng công nghệ tế bào gốc - Bệnh viện Da liễu Trung ương"
+},{
+  "_id": {
+    "$oid": "61df87c5bc73e41705aa7eec"
+  },
+  "stt": 10,
+  "account": "vihuathuy1983",
+  "password": "JmVzjYfUJ3X",
+  "name": "Hứa Thúy Vi",
+  "age": 38,
+  "gender": "Nữ",
+  "address": "391/8 Sư Vạn Hanh, Phường 12, Quận 10, Thành phố Hồ Chí Minh",
+  "role": 2,
+  "description": "Giám đốc Phòng khám Chuyên khoa Nội An Phước\r\nBác sĩ chuyên khoa Tiêu hóa - Gan mật - Nội soi tiêu hóa\r\nHơn 10 năm công tác tại Bệnh viện Nhân dân 115\r\nBác sĩ nhận khám cho bệnh nhân từ 15 tuổi trở lên"
+},{
+  "_id": {
+    "$oid": "61df87c5bc73e41705aa7eed"
+  },
+  "account": "blackbi",
+  "password": "thaiden92",
+  "name": "Vũ Phạm ĐÌnh Thái",
+  "age": 30,
+  "gender": "Nam",
+  "address": "224 Nguyễn Trãi, Thanh Xuân, Hà Nội",
+  "role": 3
+},{
+  "_id": {
+    "$oid": "61df87c5bc73e41705aa7eee"
+  },
+  "account": "vinhrau",
+  "password": "xuanvinh94",
+  "name": "Hoàng Xuân Vinh",
+  "age": 27,
+  "gender": "Nam",
+  "address": "63 Phạm Đình Hổ, Hoàn Kiếm, Hà Nội",
+  "role": 3
+},{
+  "_id": {
+    "$oid": "61df87c5bc73e41705aa7eef"
+  },
+  "account": "ribisachi",
+  "password": "xq7xsCjQf",
+  "name": "Nguyễn Thị Thủy",
+  "age": 31,
+  "gender": "Nữ",
+  "address": "94 Đại La, Hai Bà Trưng, Hà Nội",
+  "role": 3
+}]

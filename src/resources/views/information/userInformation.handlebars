@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>complete responsive personal portfolio website design tutorial</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="/css/information.css">
+
+</head>
+
+<body>
+
+    <h1 class="heading">
+        <span>i</span>
+        <span>n</span>
+        <span>f</span>
+        <span>o</span>
+        <span>r</span>
+        <span>m</span>
+        <span>a</span>
+        <span>t</span>
+        <span>i</span>
+        <span>o</span>
+        <span>n</span>
+        <br><br>
+
+    </h1>
+
+
+    <section class="about" id="about">
+
+
+
+        <div class="row-1">
+
+            <div class="image">
+                <img src="/image/{{userdata.account}}.jpg" alt="" onerror="this.src='/image/user.svg'">
+
+            </div>
+
+            <div class="content">
+                <h3>{{userdata.name}} ({{changerole userdata.role}})</h3>
+                <p></p>
+                <div class="box-container">
+                    <div class="box">
+                        <p> <span> Họ và tên : </span> {{userdata.name}} </p>
+                        <p> <span> Tuổi : </span> {{userdata.age}} </p>
+                        <p> <span> Giới tính : </span> {{userdata.gender}} </p>
+                        <p> <span> Địa chỉ : </span> {{userdata.address}}</p>
+                        <p> <span> SĐT : </span> {{userdata.phone}} </p>
+                    </div>
+                    <div class="box">
+                        <p> <span> Email : </span>{{userdata.email}} </p>
+                        <p> <span> Quốc tịch : </span> {{userdata.origin}} </p>
+                        <p> <span> Mô tả bản thân : </span> {{userdata.description}} </p>
+                    </div>
+                </div>
+                <a href="/logout" class="btn">Đăng xuất</a>
+                <a href="#" class="btn" id="edit">Sửa thông tin</a>
+            </div>
+            <div class="editinfo">
+                <i class="fas fa-times" id="off"></i>
+                <form action="/information?_method=PUT" method="POST">
+                    <h3>Sửa thông tin</h3>
+                    <input type="text" class="box" placeholder="Tên tài khoản" name="account"
+                        value="{{userdata.account}}" readonly="true">
+                    <input type="password" class="box" placeholder="Mật khẩu mới" value="{{userdata.password}}">
+                    <input type="text" class="box" placeholder="Họ và tên" name="name" value="{{userdata.name}}"
+                        readonly="true">
+                    <input type="text" class="box" placeholder="Tuổi" name="age" value="{{userdata.age}}">
+                    <select class="box" placeholder="Giới tính" name="gender">
+                        <option>Lựa chọn giới tính</option>
+                        <option value="Nam" class="box">Nam</option>
+                        <option value="Nữ" class="box">Nữ</option>
+                    </select>
+                    {{!-- <input type="text" class="box" placehoder="Giới tính"> --}}
+                    <input type="email" class="box" placeholder="Địa chỉ email" name="email" value="{{userdata.email}}">
+                    <input type="tel" class="box" placeholder="Số điện thoại" name="phone" value="{{userdata.phone}}">
+                    <input type="text" class="box" placeholder="Địa chỉ" name="address" value="{{userdata.address}}">
+                    <input type="text" class="box" placeholder="Mô tả bản thân" name="description"
+                        value="{{userdata.description}}">
+                    <input type="text" class="box" placeholder="Quốc tịch" name="origin" value="{{userdata.origin}}">
+                    <input type="submit" value="Lưu thông tin" class="btn">
+                </form>
+            </div>
+        </div>
+
+
+        <section class="experience" id="experience">
+            <h1 class="heading">
+                <span>c</span>
+                <span>a</span>
+                <span>l</span>
+                <span>e</span>
+                <span>n</span>
+                <span>d</span>
+                <span>a</span>
+                <span>r</span>
+            </h1>
+            <div class="box-container">
+                {{#each accountSchedules}}
+                <div class="box">
+                    <div class="content">
+                        <span>{{this.createdAt}}</span>
+                        <h3>Lịch đăng ký khám bệnh thứ {{count @index}} </h3>
+                        <p>Bác sĩ khám: {{this.doctorname}}</p>
+                        <p>Tên bệnh nhân: {{this.for}}</p>
+                        <p>Ngày tới khám: {{this.date}}</p>
+                        <p>SĐT: {{this.phone}}</p>
+                        <p>Địa chỉ: {{this.address}}</p>
+                        <p>Lý do khám: {{this.description}}</p>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+
+            <h1 class="heading">
+                <span>T</span>
+                <span>O</span>
+                <span>D</span>
+                <span>O</span>
+
+            </h1>
+
+
+            <div class="box-container">
+                {{#each doctorSchedules}}
+                <div class="box">
+                    <div class="content">
+                        <span>{{this.createdAt}}</span>
+                        <h3>Lịch đăng ký khám bệnh thứ {{count @index}} của tài khoản {{this.username}} </h3>
+                        <p>Bác sĩ khám: {{this.doctorname}}</p>
+                        <p>Tên bệnh nhân: {{this.for}}</p>
+                        <p>Ngày tới khám: {{this.date}}</p>
+                        <p>SĐT: {{this.phone}}</p>
+                        <p>Địa chỉ: {{this.address}}</p>
+                        <p>Lý do khám: {{this.description}}</p>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+
+
+        </section>
+
+    </section>
+</body>
+<script src="/js/information.js"></script>
+
+</html>

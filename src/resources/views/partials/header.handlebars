@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HustCARE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <script src="jquery-3.5.1.min.js"></script>
+</head>
+<header>
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+    <a href="/" class="logo"><span>Hust</span>CARE</a>
+    <nav class="navbar">
+        <a href="/doctor">Liên hệ bác sĩ</a>
+        <a href="/information">Thông tin cá nhân</a>
+        <a href="/feedback">Đánh giá</a>
+        <a href="/admin">Admin</a>
+    </nav>
+
+    <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <i class="fas fa-user" id="login-btn"></i>
+    </div>
+
+    <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="Tìm kiếm thông tin">
+        <label for="search-bar" class="fas fa-search"></label>
+    </form>
+    
+    <div class="login-form-container">
+        <i class="fas fa-times" id="form-close"></i>
+        <form action="/login" method="post">
+            <h3>Đăng nhập</h3>
+            <input type="text" class="box" placeholder="Nhập tên tài khoản" name="account" required>
+            <input type="password" class="box" placeholder="Nhập mật khẩu" name="password" required>
+            <input type="submit" value="Đăng nhập" class="btn">
+            <p>Tạo tài khoản mới ? <a href="#" id="reg">Đăng kí</a></p>
+        </form>
+    </div>
+
+    <div class="signup-form-container">
+        <i class="fas fa-times" id="form-closee"></i>
+        <form action="/register" method="post">
+            <h3>Đăng ký</h3>
+            <input type="account" class="box" placeholder="Nhập tên tài khoản" name="account" required>
+            <input type="password" class="box" placeholder="Nhập mật khẩu" name="password" required>
+            <input type="text" class="box" placeholder="Họ và tên" name="name" required>
+            <input type="text" class="box" placeholder="Nhập số điện thoại" name="phone" required>
+            <input type="submit" value="Đăng kí " class="btn">
+        </form>
+    </div>
+
+
+</header>
+<script src="/js/header.js"></script>
+
+</html>

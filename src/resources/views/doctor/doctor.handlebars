@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HustCARE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="/css/doctor.css">
+
+</head>
+
+<body>
+    <section class="doctor" id="doctor">
+        <h1 class="heading">
+            <span>D</span>
+            <span>o</span>
+            <span>c</span>
+            <span>t</span>
+            <span>o</span>
+            <span>r</span>
+        </h1>
+        
+        {{#each doctors as |value key|}}
+        <div class="box">
+            <img src="/image2/bs{{count key}}.jpg" alt="">
+            <h3>{{this.name}}</h3>
+            <p>{{this.description}}</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <a href="/doctor/schedule?d={{this.name}}" class="btn">Đặt lịch</a>
+        </div>
+        {{/each}}
+    </section>
+</body>
+<script src="script.js"></script>
+
+</html>
